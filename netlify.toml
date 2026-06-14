@@ -1,8 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "bun run build"
   publish = "dist/client"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[edge_functions]]
+  function = "server"
+  path = "/*"
